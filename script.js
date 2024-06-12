@@ -51,9 +51,9 @@ function showResult(score, playerChoice, computerChoice) {
     resultDiv.innerText = "You Win!";
   }
 
-  handsDiv.innerText = `${playerChoice} vs ${computerChoice}`;
+  handsDiv.innerText = `Player: ${playerChoice} VS Computer: ${computerChoice}`;
 
-  playerScoreDiv.innerText = totalScore.playerScore;
+  playerScoreDiv.innerText = "Total score:" + " " + totalScore.playerScore;
 // playerScoreDiv.innerText = JSON.stringify(totalScore, null, 10)
 }
 
