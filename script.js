@@ -51,12 +51,13 @@ function showResult(score, playerChoice, computerChoice) {
     resultDiv.innerText = "You Win!";
   }
 
-  handsDiv.innerText = `Player: ${playerChoice} VS Computer: ${computerChoice}`;
+  handsDiv.innerText = `🧑 ${playerChoice} VS 🤖 ${computerChoice}`;
 
   playerScoreDiv.innerText = "Total score:" + " " + totalScore.playerScore;
 // playerScoreDiv.innerText = JSON.stringify(totalScore, null, 10)
 }
 
+// ** Make the RPS buttons actively listen for a click and do something once a click is detected **
 function onClickRPS(playerChoice) {
   console.log({ playerChoice });
   let computerChoice = getComputerChoice(1, 4);
@@ -69,7 +70,6 @@ function onClickRPS(playerChoice) {
   showResult(score, playerChoice, computerChoice);
 }
 
-// ** Make the RPS buttons actively listen for a click and do something once a click is detected **
 function playGame() {
   const rpsButtons = document.querySelectorAll(".rpsButton");
 
